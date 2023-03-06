@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">UberFareApp</string>
+    <string name="txtTitle">Uber Fare Calculator</string>
+    <string name="txtMilesInput">How many miles is your trip?</string>
+    <string name="txtVehiSelect">What type of Vehicle would you prefer?</string>
+    <string name="btnEstimate">Estimate Uber Cost</string>
+    <string name="txtMilesDisplay">Miles: ?</string>
+    <string name="txtVehiDisplay">Vehicle Type: ?</string>
+    <string name="btnBack">Back to Beginning</string>
+    <string name="btnRequestRide">Request ride now</string>
+    <string name="txtConfirmation">Your request has been submitted.</string>
+    <string name="txtResults">Your driver, Jim Bob McGee, will be arriving soon!</string>
+    <string name="txtThanks">Thank you for driving with us!</string>
+    <string name="btnBackResults">Request Another Ride?</string>
+    <string name="txtEstimate">Estimate Cost: ?</string>
+    <string-array name="spnVehiSelect">
+        <item>Smart Car</item>
+        <item>Sedan</item>
+        <item>Mini Van</item>
+    </string-array>
+</resources>

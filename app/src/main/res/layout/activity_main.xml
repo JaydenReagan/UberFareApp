@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtTitle"
+        android:textSize="34sp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:id="@+id/lytMilesInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtMilesInput"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/txtMilesInput"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtxtMilesInput"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytVehiSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtVehiSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtVehiSelect"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spnVehiSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/spnVehiSelect"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEstimate"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:text="@string/btnEstimate"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imgRoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/road" />
+
+
+</LinearLayout>
