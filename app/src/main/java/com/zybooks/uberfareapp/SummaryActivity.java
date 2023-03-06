@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.text.DecimalFormat;
@@ -15,6 +16,7 @@ public class SummaryActivity extends AppCompatActivity {
     TextView milesDisplay;
     TextView vehiDisplay;
     TextView estimate;
+    ImageView carPic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class SummaryActivity extends AppCompatActivity {
         milesDisplay = findViewById(R.id.txtMilesDisplay);
         vehiDisplay = findViewById(R.id.txtVehiDisplay);
         estimate = findViewById(R.id.txtEstimate);
+        carPic = findViewById(R.id.imgCar);
 
         //On click event to return to Main Activity
         Button btnBack = (Button) findViewById(R.id.btnBackSummary);
@@ -54,13 +57,16 @@ public class SummaryActivity extends AppCompatActivity {
         if (vehicleSelected == 0){ //Smart Car
             Double scFee = 2.0; //Fee for selecting a Smart Car
             total = fee + scFee + (calcMileage * rate);
+            carPic.setImageResource(R.drawable.smartcar); //Changing car picture to a smart car
         }
         else if (vehicleSelected == 1){ //Sedan
             total = fee + (calcMileage * rate);
+            carPic.setImageResource(R.drawable.sedan); //Changing car picture to a sedan
         }
         else if (vehicleSelected == 2){ //Mini Van
             Double mvFee = 5.0; //Fee for selecting a Mini Van
             total = fee + mvFee + (calcMileage * rate);
+            carPic.setImageResource(R.drawable.minivan); //Changing car picture to a mini van
         }
 
         //Showing the Estimate to the user
